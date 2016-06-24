@@ -1,1 +1,0 @@
-(function(e){"use strict";e(["afontgarde"],function(){window.AFontGarde("FontAwesome",{glyphs:"&#61515;"}),window.AFontGarde("edx-icons",{glyphs:""})})}).call(this,"function"==typeof define&&define.amd?define:"undefined"!=typeof RequireJS?RequireJS.define:edx.GlobalLoader.defineAs("edxicons","edx-pattern-library/js/edx-icons.js"));

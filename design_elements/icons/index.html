@@ -17,8 +17,31 @@
 
     <meta name="description" content="The Visual, UI, and Front End styleguide for edX's applications">
 
-    <link rel="stylesheet" href="/public/css/main-ltr.css">
+    <link rel="stylesheet" href="/public/pattern-library-doc.css">
 
+    <!-- Begin Jekyll SEO tag v1.4.0 -->
+<title>Icons - edX Pattern Library</title>
+<meta property="og:title" content="Icons" />
+<meta name="description" content="A collection of accessible icons available for use when building UI with the edX Pattern Library." />
+<meta property="og:description" content="A collection of accessible icons available for use when building UI with the edX Pattern Library." />
+<link rel="canonical" href="http://ux.edx.org//design_elements/icons/" />
+<meta property="og:url" content="http://ux.edx.org//design_elements/icons/" />
+<meta property="og:site_name" content="edX Pattern Library" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-02-01T19:00:00-05:00" />
+<link rel="prev" href="http://ux.edx.org//design_elements/headings/" title="Headings" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Icons",
+    "datePublished": "2016-02-01T19:00:00-05:00",
+    "description": "A collection of accessible icons available for use when building UI with the edX Pattern Library.",
+    "logo": "http://ux.edx.org//public/images/edx-logo.svg",
+    "url": "http://ux.edx.org//design_elements/icons/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
 </head>
 
 
@@ -164,6 +187,17 @@
     
         <li class="item no-indent ">
     
+        <a class="pattern-title pattern pldoc-link" href="/./components/breadcrumbs/">
+    
+    Breadcrumbs
+    
+        </a>
+    
+</li>
+
+    
+        <li class="item no-indent ">
+    
         <a class="pattern-title pattern pldoc-link" href="/./components/buttons/">
     
     Buttons
@@ -289,13 +323,14 @@
                         <h3 class="hd-6 example-set-hd">Using Icons (Decorative and as part of controls/content)</h3>
 
 <div class="example-set-description copy-meta">
+    <p>We've organized the icon fonts that edX uses from the <a href="http://fontawesome.io/icons/">Font Awesome 4.6.3</a> library. However the full library of icons is available.</p>
     <p>Icons can be used as both visual decorators or as tangible parts of a UI's controls and content. In the latter case, a fallback method is needed to communicate the icon's purpose/content. Please see the following examples for cases: </p>
 </div>
 
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon icon-information" aria-hidden="true"></span>
+            <span class="icon fa fa-info-circle" aria-hidden="true"></span>
         </div>
         <div class="use-description">
             <p>Icon as a pure decoration (hidden semantically in the DOM)</p>
@@ -304,27 +339,14 @@
 
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-error" aria-hidden="true"></span>
-                <span class="text">Error</span>
-            </span>
+            <span class="icon fa fa-exclamation-circle" aria-hidden="true"></span>
+            <span class="sr-only">Error</span>
         </div>
         <div class="use-description">
             <p>Icon with text fallback</p>
         </div>
     </div>
 
-    <div class="example example-icon">
-        <div class="icon-display">
-            <span class="icon-fallback icon-fallback-img">
-                <span class="icon icon-warning" aria-hidden="true"></span>
-                <span class="text">Warning</span>
-            </span>
-        </div>
-        <div class="use-description">
-            <p>Icon with image fallback</p>
-        </div>
-    </div>
 </div>
 
 <h3 class="hd-6 example-set-hd">Media</h3>
@@ -332,10 +354,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-video-camera" aria-hidden="true"></span>
-                <span class="text">Video</span>
-            </span>
+            <span class="icon fa fa-video-camera" aria-hidden="true"></span>
+            <span class="sr-only">Video</span>
         </div>
         <div class="icon-classname">
             video-camera
@@ -343,10 +363,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-camera" aria-hidden="true"></span>
-                <span class="text">Camera</span>
-            </span>
+            <span class="icon fa fa-camera" aria-hidden="true"></span>
+            <span class="sr-only">Camera</span>
         </div>
         <div class="icon-classname">
             camera
@@ -354,10 +372,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-closed-captions" aria-hidden="true"></span>
-                <span class="text">Closed Captions</span>
-            </span>
+            <span class="icon fa fa-cc" aria-hidden="true"></span>
+            <span class="sr-only">Closed Captions</span>
         </div>
         <div class="icon-classname">
             closed-captions
@@ -365,10 +381,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-pause" aria-hidden="true"></span>
-                <span class="text">Pause</span>
-            </span>
+            <span class="icon fa fa-pause" aria-hidden="true"></span>
+            <span class="sr-only">Pause</span>
         </div>
         <div class="icon-classname">
             pause
@@ -376,10 +390,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-play" aria-hidden="true"></span>
-                <span class="text">Play</span>
-            </span>
+            <span class="icon fa fa-play" aria-hidden="true"></span>
+            <span class="sr-only">Play</span>
         </div>
         <div class="icon-classname">
             play
@@ -387,10 +399,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-stop" aria-hidden="true"></span>
-                <span class="text">Stop</span>
-            </span>
+            <span class="icon fa fa-stop" aria-hidden="true"></span>
+            <span class="sr-only">Stop</span>
         </div>
         <div class="icon-classname">
             stop
@@ -398,10 +408,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-fullscreen" aria-hidden="true"></span>
-                <span class="text">Enter fullscreen</span>
-            </span>
+            <span class="icon fa fa-arrows-alt" aria-hidden="true"></span>
+            <span class="sr-only">Enter fullscreen</span>
         </div>
         <div class="icon-classname">
             fullscreen
@@ -409,10 +417,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-exit-fullscreen" aria-hidden="true"></span>
-                <span class="text">Exit fullscreen</span>
-            </span>
+            <span class="icon fa fa-compress" aria-hidden="true"></span>
+            <span class="sr-only">Exit fullscreen</span>
         </div>
         <div class="icon-classname">
             exit-fullscreen
@@ -420,10 +426,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-volume-off" aria-hidden="true"></span>
-                <span class="text">Muted</span>
-            </span>
+            <span class="icon fa fa-volume-off" aria-hidden="true"></span>
+            <span class="sr-only">Muted</span>
         </div>
         <div class="icon-classname">
             volume-off
@@ -431,10 +435,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-volume-down" aria-hidden="true"></span>
-                <span class="text">Low volume</span>
-            </span>
+            <span class="icon fa fa-volume-down" aria-hidden="true"></span>
+            <span class="sr-only">Low volume</span>
         </div>
         <div class="icon-classname">
             volume-down
@@ -442,10 +444,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-volume-up" aria-hidden="true"></span>
-                <span class="text">High volume</span>
-            </span>
+            <span class="icon fa fa-volume-up" aria-hidden="true"></span>
+            <span class="sr-only">High volume</span>
         </div>
         <div class="icon-classname">
             volume-up
@@ -458,10 +458,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-user" aria-hidden="true"></span>
-                <span class="text">User account</span>
-            </span>
+            <span class="icon fa fa-user" aria-hidden="true"></span>
+            <span class="sr-only">User account</span>
         </div>
         <div class="icon-classname">
             user
@@ -469,10 +467,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-calendar" aria-hidden="true"></span>
-                <span class="text">Calendar</span>
-            </span>
+            <span class="icon fa fa-calendar" aria-hidden="true"></span>
+            <span class="sr-only">Calendar</span>
         </div>
         <div class="icon-classname">
             calendar
@@ -485,10 +481,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-arrow-up" aria-hidden="true"></span>
-                <span class="text">Up arrow</span>
-            </span>
+            <span class="icon fa fa-arrow-up" aria-hidden="true"></span>
+            <span class="sr-only">Up arrow</span>
         </div>
         <div class="icon-classname">
             arrow-up
@@ -496,10 +490,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-arrow-down" aria-hidden="true"></span>
-                <span class="text">Down arrow</span>
-            </span>
+            <span class="icon fa fa-arrow-down" aria-hidden="true"></span>
+            <span class="sr-only">Down arrow</span>
         </div>
         <div class="icon-classname">
             arrow-down
@@ -507,10 +499,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-arrow-circle-down" aria-hidden="true"></span>
-                <span class="text">Down arrow</span>
-            </span>
+            <span class="icon fa fa-arrow-circle-down" aria-hidden="true"></span>
+            <span class="sr-only">Down arrow</span>
         </div>
         <div class="icon-classname">
             arrow-circle-down
@@ -518,10 +508,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-angle-left" aria-hidden="true"></span>
-                <span class="text">Left arrow</span>
-            </span>
+            <span class="icon fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Left arrow</span>
         </div>
         <div class="icon-classname">
             angle-left
@@ -529,10 +517,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-angle-right" aria-hidden="true"></span>
-                <span class="text">Right arrow</span>
-            </span>
+            <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Right arrow</span>
         </div>
         <div class="icon-classname">
             angle-right
@@ -540,10 +526,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-angle-up" aria-hidden="true"></span>
-                <span class="text">Up arrow</span>
-            </span>
+            <span class="icon fa fa-angle-up" aria-hidden="true"></span>
+            <span class="sr-only">Up arrow</span>
         </div>
         <div class="icon-classname">
             angle-up
@@ -551,10 +535,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-angle-down" aria-hidden="true"></span>
-                <span class="text">Down arrow</span>
-            </span>
+            <span class="icon fa fa-angle-down" aria-hidden="true"></span>
+            <span class="sr-only">Down arrow</span>
         </div>
         <div class="icon-classname">
             angle-down
@@ -562,10 +544,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-refresh" aria-hidden="true"></span>
-                <span class="text">Refresh</span>
-            </span>
+            <span class="icon fa fa-refresh" aria-hidden="true"></span>
+            <span class="sr-only">Refresh</span>
         </div>
         <div class="icon-classname">
             refresh
@@ -573,10 +553,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-menu" aria-hidden="true"></span>
-                <span class="text">Menu</span>
-            </span>
+            <span class="icon fa fa-navicon" aria-hidden="true"></span>
+            <span class="sr-only">Menu</span>
         </div>
         <div class="icon-classname">
             menu, reorder, bars
@@ -584,10 +562,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-ellipsis" aria-hidden="true"></span>
-                <span class="text">Ellipsis</span>
-            </span>
+            <span class="icon fa fa-ellipsis-h" aria-hidden="true"></span>
+            <span class="sr-only">Ellipsis</span>
         </div>
         <div class="icon-classname">
             ellipsis
@@ -600,10 +576,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-trash" aria-hidden="true"></span>
-                <span class="text">Delete</span>
-            </span>
+            <span class="icon fa fa-trash-o" aria-hidden="true"></span>
+            <span class="sr-only">Delete</span>
         </div>
         <div class="icon-classname">
             trash, delete
@@ -611,10 +585,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-help" aria-hidden="true"></span>
-                <span class="text">Help</span>
-            </span>
+            <span class="icon fa fa-question-circle" aria-hidden="true"></span>
+            <span class="sr-only">Help</span>
         </div>
         <div class="icon-classname">
             help
@@ -622,10 +594,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-check" aria-hidden="true"></span>
-                <span class="text">Check Mark</span>
-            </span>
+            <span class="icon fa fa-check" aria-hidden="true"></span>
+            <span class="sr-only">Check Mark</span>
         </div>
         <div class="icon-classname">
             check
@@ -633,10 +603,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-close" aria-hidden="true"></span>
-                <span class="text">Close</span>
-            </span>
+            <span class="icon fa fa-close" aria-hidden="true"></span>
+            <span class="sr-only">Close</span>
         </div>
         <div class="icon-classname">
             close, remove
@@ -644,10 +612,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-close-circle" aria-hidden="true"></span>
-                <span class="text">Remove</span>
-            </span>
+            <span class="icon fa fa-times-circle" aria-hidden="true"></span>
+            <span class="sr-only">Remove</span>
         </div>
         <div class="icon-classname">
             close-circle
@@ -655,10 +621,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-close-circle-light" aria-hidden="true"></span>
-                <span class="text">Remove</span>
-            </span>
+            <span class="icon fa fa-times-circle-o" aria-hidden="true"></span>
+            <span class="sr-only">Remove</span>
         </div>
         <div class="icon-classname">
             close-circle-light
@@ -666,10 +630,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-error" aria-hidden="true"></span>
-                <span class="text">Error</span>
-            </span>
+            <span class="icon fa fa-exclamation-circle" aria-hidden="true"></span>
+            <span class="sr-only">Error</span>
         </div>
         <div class="icon-classname">
             error
@@ -677,10 +639,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-warning" aria-hidden="true"></span>
-                <span class="text">Warning</span>
-            </span>
+            <span class="icon fa fa-exclamation-triangle" aria-hidden="true"></span>
+            <span class="sr-only">Warning</span>
         </div>
         <div class="icon-classname">
             warning
@@ -688,10 +648,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-information" aria-hidden="true"></span>
-                <span class="text">Information</span>
-            </span>
+            <span class="icon fa fa-info-circle" aria-hidden="true"></span>
+            <span class="sr-only">Information</span>
         </div>
         <div class="icon-classname">
             information
@@ -704,10 +662,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-checkbox-checked" aria-hidden="true"></span>
-                <span class="text">Checked checkbox</span>
-            </span>
+            <span class="icon fa fa-check-square-o" aria-hidden="true"></span>
+            <span class="sr-only">Checked checkbox</span>
         </div>
         <div class="icon-classname">
             checkbox-checked
@@ -715,10 +671,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-checkbox-unchecked" aria-hidden="true"></span>
-                <span class="text">Unchecked checkbox</span>
-            </span>
+            <span class="icon fa fa-square-o" aria-hidden="true"></span>
+            <span class="sr-only">Unchecked checkbox</span>
         </div>
         <div class="icon-classname">
             checkbox-unchecked
@@ -726,10 +680,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-checkbox-checked-dark" aria-hidden="true"></span>
-                <span class="text">Checked checkbox</span>
-            </span>
+            <span class="icon fa fa-check-square" aria-hidden="true"></span>
+            <span class="sr-only">Checked checkbox</span>
         </div>
         <div class="icon-classname">
             checkbox-checked-dark
@@ -737,10 +689,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-radio-unchecked" aria-hidden="true"></span>
-                <span class="text">Unchecked radio</span>
-            </span>
+            <span class="icon fa fa-circle-o" aria-hidden="true"></span>
+            <span class="sr-only">Unchecked radio</span>
         </div>
         <div class="icon-classname">
             radio-unchecked
@@ -748,10 +698,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-radio-checked" aria-hidden="true"></span>
-                <span class="text">Checked radio</span>
-            </span>
+            <span class="icon fa fa-dot-circle-o" aria-hidden="true"></span>
+            <span class="sr-only">Checked radio</span>
         </div>
         <div class="icon-classname">
             radio-checked
@@ -764,10 +712,8 @@
 <div class="example-set">
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-list" aria-hidden="true"></span>
-                <span class="text">Unordered list</span>
-            </span>
+            <span class="icon fa fa-list" aria-hidden="true"></span>
+            <span class="sr-only">Unordered list</span>
         </div>
         <div class="icon-classname">
             list
@@ -775,10 +721,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-list-alt" aria-hidden="true"></span>
-                <span class="text">List</span>
-            </span>
+            <span class="icon fa fa-list-alt" aria-hidden="true"></span>
+            <span class="sr-only">List</span>
         </div>
         <div class="icon-classname">
             list-alt
@@ -786,10 +730,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-clock" aria-hidden="true"></span>
-                <span class="text">Clock</span>
-            </span>
+            <span class="icon fa fa-clock-o" aria-hidden="true"></span>
+            <span class="sr-only">Clock</span>
         </div>
         <div class="icon-classname">
             clock
@@ -797,10 +739,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-filter" aria-hidden="true"></span>
-                <span class="text">Filter</span>
-            </span>
+            <span class="icon fa fa-filter" aria-hidden="true"></span>
+            <span class="sr-only">Filter</span>
         </div>
         <div class="icon-classname">
             filter
@@ -808,10 +748,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-sort" aria-hidden="true"></span>
-                <span class="text">Sort</span>
-            </span>
+            <span class="icon fa fa-sort" aria-hidden="true"></span>
+            <span class="sr-only">Sort</span>
         </div>
         <div class="icon-classname">
             sort, unsorted
@@ -819,10 +757,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-undo" aria-hidden="true"></span>
-                <span class="text">Undo</span>
-            </span>
+            <span class="icon fa fa-undo" aria-hidden="true"></span>
+            <span class="sr-only">Undo</span>
         </div>
         <div class="icon-classname">
             undo, rotate-left
@@ -830,10 +766,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-table" aria-hidden="true"></span>
-                <span class="text">Table</span>
-            </span>
+            <span class="icon fa fa-table" aria-hidden="true"></span>
+            <span class="sr-only">Table</span>
         </div>
         <div class="icon-classname">
             table
@@ -841,10 +775,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-book" aria-hidden="true"></span>
-                <span class="text">Bookmark</span>
-            </span>
+            <span class="icon fa fa-book" aria-hidden="true"></span>
+            <span class="sr-only">Bookmark</span>
         </div>
         <div class="icon-classname">
             book
@@ -852,10 +784,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-money" aria-hidden="true"></span>
-                <span class="text">Dollar bill</span>
-            </span>
+            <span class="icon fa fa-money" aria-hidden="true"></span>
+            <span class="sr-only">Dollar bill</span>
         </div>
         <div class="icon-classname">
             money
@@ -863,10 +793,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-file" aria-hidden="true"></span>
-                <span class="text">File</span>
-            </span>
+            <span class="icon fa fa-file" aria-hidden="true"></span>
+            <span class="sr-only">File</span>
         </div>
         <div class="icon-classname">
             file
@@ -874,10 +802,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-file-light" aria-hidden="true"></span>
-                <span class="text">File</span>
-            </span>
+            <span class="icon fa fa-file-o" aria-hidden="true"></span>
+            <span class="sr-only">File</span>
         </div>
         <div class="icon-classname">
             file-light
@@ -885,10 +811,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-home" aria-hidden="true"></span>
-                <span class="text">Home</span>
-            </span>
+            <span class="icon fa fa-home" aria-hidden="true"></span>
+            <span class="sr-only">Home</span>
         </div>
         <div class="icon-classname">
             home
@@ -896,10 +820,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-external-link" aria-hidden="true"></span>
-                <span class="text">External link</span>
-            </span>
+            <span class="icon fa fa-external-link" aria-hidden="true"></span>
+            <span class="sr-only">External link</span>
         </div>
         <div class="icon-classname">
             external-link
@@ -907,10 +829,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-sitemap" aria-hidden="true"></span>
-                <span class="text">Sitemap</span>
-            </span>
+            <span class="icon fa fa-sitemap" aria-hidden="true"></span>
+            <span class="sr-only">Sitemap</span>
         </div>
         <div class="icon-classname">
            sitemap
@@ -918,10 +838,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-lock" aria-hidden="true"></span>
-                <span class="text">Locked</span>
-            </span>
+            <span class="icon fa fa-lock" aria-hidden="true"></span>
+            <span class="sr-only">Locked</span>
         </div>
         <div class="icon-classname">
             lock
@@ -929,10 +847,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-unlock" aria-hidden="true"></span>
-                <span class="text">Unlocked</span>
-            </span>
+            <span class="icon fa fa-unlock" aria-hidden="true"></span>
+            <span class="sr-only">Unlocked</span>
         </div>
         <div class="icon-classname">
             unlock
@@ -940,10 +856,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-search" aria-hidden="true"></span>
-                <span class="text">Search</span>
-            </span>
+            <span class="icon fa fa-search" aria-hidden="true"></span>
+            <span class="sr-only">Search</span>
         </div>
         <div class="icon-classname">
             search
@@ -951,10 +865,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-search-plus" aria-hidden="true"></span>
-                <span class="text">Zoom in</span>
-            </span>
+            <span class="icon fa fa-search-plus" aria-hidden="true"></span>
+            <span class="sr-only">Zoom in</span>
         </div>
         <div class="icon-classname">
             search-plus
@@ -962,10 +874,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-search-minus" aria-hidden="true"></span>
-                <span class="text">Zoom out</span>
-            </span>
+            <span class="icon fa fa-search-minus" aria-hidden="true"></span>
+            <span class="sr-only">Zoom out</span>
         </div>
         <div class="icon-classname">
             search-minus
@@ -973,10 +883,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-settings" aria-hidden="true"></span>
-                <span class="text">Settings</span>
-            </span>
+            <span class="icon fa fa-cog" aria-hidden="true"></span>
+            <span class="sr-only">Settings</span>
         </div>
         <div class="icon-classname">
             settings, cog, gear
@@ -984,10 +892,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-shopping-cart" aria-hidden="true"></span>
-                <span class="text">Checkout</span>
-            </span>
+            <span class="icon fa fa-shopping-cart" aria-hidden="true"></span>
+            <span class="sr-only">Checkout</span>
         </div>
         <div class="icon-classname">
             shopping-cart
@@ -995,10 +901,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-comments" aria-hidden="true"></span>
-                <span class="text">Comments</span>
-            </span>
+            <span class="icon fa fa-comments" aria-hidden="true"></span>
+            <span class="sr-only">Comments</span>
         </div>
         <div class="icon-classname">
             comments
@@ -1006,10 +910,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-comment" aria-hidden="true"></span>
-                <span class="text">Comment</span>
-            </span>
+            <span class="icon fa fa-comment" aria-hidden="true"></span>
+            <span class="sr-only">Comment</span>
         </div>
         <div class="icon-classname">
             comment
@@ -1017,10 +919,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-reply" aria-hidden="true"></span>
-                <span class="text">Reply</span>
-            </span>
+            <span class="icon fa fa-reply" aria-hidden="true"></span>
+            <span class="sr-only">Reply</span>
         </div>
         <div class="icon-classname">
             reply
@@ -1028,10 +928,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-plus" aria-hidden="true"></span>
-                <span class="text">Add</span>
-            </span>
+            <span class="icon fa fa-plus" aria-hidden="true"></span>
+            <span class="sr-only">Add</span>
         </div>
         <div class="icon-classname">
             plus
@@ -1039,10 +937,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-minus" aria-hidden="true"></span>
-                <span class="text">Remove</span>
-            </span>
+            <span class="icon fa fa-minus" aria-hidden="true"></span>
+            <span class="sr-only">Remove</span>
         </div>
         <div class="icon-classname">
             minus
@@ -1050,10 +946,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-print" aria-hidden="true"></span>
-                <span class="text">Print</span>
-            </span>
+            <span class="icon fa fa-print" aria-hidden="true"></span>
+            <span class="sr-only">Print</span>
         </div>
         <div class="icon-classname">
             print
@@ -1061,10 +955,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-pencil" aria-hidden="true"></span>
-                <span class="text">Pencil</span>
-            </span>
+            <span class="icon fa fa-pencil" aria-hidden="true"></span>
+            <span class="sr-only">Pencil</span>
         </div>
         <div class="icon-classname">
             pencil
@@ -1072,10 +964,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-edit" aria-hidden="true"></span>
-                <span class="text">Edit</span>
-            </span>
+            <span class="icon fa fa-edit" aria-hidden="true"></span>
+            <span class="sr-only">Edit</span>
         </div>
         <div class="icon-classname">
             edit
@@ -1083,10 +973,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-copy" aria-hidden="true"></span>
-                <span class="text">Copy</span>
-            </span>
+            <span class="icon fa fa-copy" aria-hidden="true"></span>
+            <span class="sr-only">Copy</span>
         </div>
         <div class="icon-classname">
             copy
@@ -1094,10 +982,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-email" aria-hidden="true"></span>
-                <span class="text">Email</span>
-            </span>
+            <span class="icon fa fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only">Email</span>
         </div>
         <div class="icon-classname">
             email
@@ -1105,10 +991,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-flag" aria-hidden="true"></span>
-                <span class="text">Flag</span>
-            </span>
+            <span class="icon fa fa-flag" aria-hidden="true"></span>
+            <span class="sr-only">Flag</span>
         </div>
         <div class="icon-classname">
             flag
@@ -1116,10 +1000,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-thumb-tack" aria-hidden="true"></span>
-                <span class="text">Pin</span>
-            </span>
+            <span class="icon fa fa-thumb-tack" aria-hidden="true"></span>
+            <span class="sr-only">Pin</span>
         </div>
         <div class="icon-classname">
             thumb-tack
@@ -1127,10 +1009,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-link" aria-hidden="true"></span>
-                <span class="text">Link</span>
-            </span>
+            <span class="icon fa fa-link" aria-hidden="true"></span>
+            <span class="sr-only">Link</span>
         </div>
         <div class="icon-classname">
             link
@@ -1138,10 +1018,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-unlink" aria-hidden="true"></span>
-                <span class="text">Unlink</span>
-            </span>
+            <span class="icon fa fa-unlink" aria-hidden="true"></span>
+            <span class="sr-only">Unlink</span>
         </div>
         <div class="icon-classname">
             unlink
@@ -1149,10 +1027,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-quote-left" aria-hidden="true"></span>
-                <span class="text">Quote</span>
-            </span>
+            <span class="icon fa fa-quote-left" aria-hidden="true"></span>
+            <span class="sr-only">Quote</span>
         </div>
         <div class="icon-classname">
             quote-left
@@ -1160,10 +1036,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-upload" aria-hidden="true"></span>
-                <span class="text">Upload</span>
-            </span>
+            <span class="icon fa fa-upload" aria-hidden="true"></span>
+            <span class="sr-only">Upload</span>
         </div>
         <div class="icon-classname">
             upload
@@ -1171,10 +1045,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-show" aria-hidden="true"></span>
-                <span class="text">Show</span>
-            </span>
+            <span class="icon fa fa-eye" aria-hidden="true"></span>
+            <span class="sr-only">Show</span>
         </div>
         <div class="icon-classname">
             show, visible
@@ -1182,10 +1054,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-hide" aria-hidden="true"></span>
-                <span class="text">Hide</span>
-            </span>
+            <span class="icon fa fa-eye-slash" aria-hidden="true"></span>
+            <span class="sr-only">Hide</span>
         </div>
         <div class="icon-classname">
             hide, hidden
@@ -1193,10 +1063,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-share" aria-hidden="true"></span>
-                <span class="text">Share</span>
-            </span>
+            <span class="icon fa fa-share-square-o" aria-hidden="true"></span>
+            <span class="sr-only">Share</span>
         </div>
         <div class="icon-classname">
             share
@@ -1204,10 +1072,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-star" aria-hidden="true"></span>
-                <span class="text">Favorite</span>
-            </span>
+            <span class="icon fa fa-star" aria-hidden="true"></span>
+            <span class="sr-only">Favorite</span>
         </div>
         <div class="icon-classname">
             star
@@ -1215,10 +1081,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-bullhorn" aria-hidden="true"></span>
-                <span class="text">Notifications</span>
-            </span>
+            <span class="icon fa fa-bullhorn" aria-hidden="true"></span>
+            <span class="sr-only">Notifications</span>
         </div>
         <div class="icon-classname">
             bullhorn
@@ -1226,10 +1090,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-spinner" aria-hidden="true"></span>
-                <span class="text">Loading, please wait...</span>
-            </span>
+            <span class="icon fa fa-spinner" aria-hidden="true"></span>
+            <span class="sr-only">Loading, please wait...</span>
         </div>
         <div class="icon-classname">
             spinner
@@ -1237,10 +1099,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-twitter-square" aria-hidden="true"></span>
-                <span class="text">Twitter</span>
-            </span>
+            <span class="icon fa fa-twitter-square" aria-hidden="true"></span>
+            <span class="sr-only">Twitter</span>
         </div>
         <div class="icon-classname">
             twitter-square
@@ -1248,10 +1108,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-facebook-square" aria-hidden="true"></span>
-                <span class="text">Facebook</span>
-            </span>
+            <span class="icon fa fa-facebook-square" aria-hidden="true"></span>
+            <span class="sr-only">Facebook</span>
         </div>
         <div class="icon-classname">
             facebook-square
@@ -1259,10 +1117,8 @@
     </div>
     <div class="example example-icon">
         <div class="icon-display">
-            <span class="icon-fallback icon-fallback-text">
-                <span class="icon icon-linkedin-square" aria-hidden="true"></span>
-                <span class="text">LinkedIn</span>
-            </span>
+            <span class="icon fa fa-linkedin-square" aria-hidden="true"></span>
+            <span class="sr-only">LinkedIn</span>
         </div>
         <div class="icon-classname">
             linkedin-square
@@ -1282,13 +1138,14 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Using Icons (Decorative and as part of controls/content)<span class="nt">&lt;/h3&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set-description copy-meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>We've organized the icon fonts that edX uses from the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://fontawesome.io/icons/"</span><span class="nt">&gt;</span>Font Awesome 4.6.3<span class="nt">&lt;/a&gt;</span> library. However the full library of icons is available.<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;p&gt;</span>Icons can be used as both visual decorators or as tangible parts of a UI's controls and content. In the latter case, a fallback method is needed to communicate the icon's purpose/content. Please see the following examples for cases: <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-information"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"use-description"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;</span>Icon as a pure decoration (hidden semantically in the DOM)<span class="nt">&lt;/p&gt;</span>
@@ -1297,27 +1154,14 @@
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-error"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-exclamation-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"use-description"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p&gt;</span>Icon with text fallback<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-img"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-warning"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"use-description"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Icon with image fallback<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"hd-6 example-set-hd"</span><span class="nt">&gt;</span>Media<span class="nt">&lt;/h3&gt;</span>
@@ -1325,10 +1169,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-video-camera"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Video<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-video-camera"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Video<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             video-camera
@@ -1336,10 +1178,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-camera"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Camera<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-camera"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Camera<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             camera
@@ -1347,10 +1187,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-closed-captions"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Closed Captions<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-cc"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Closed Captions<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             closed-captions
@@ -1358,10 +1196,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-pause"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Pause<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-pause"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pause<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             pause
@@ -1369,10 +1205,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-play"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Play<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-play"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Play<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             play
@@ -1380,10 +1214,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-stop"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Stop<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-stop"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Stop<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             stop
@@ -1391,10 +1223,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-fullscreen"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Enter fullscreen<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-arrows-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Enter fullscreen<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             fullscreen
@@ -1402,10 +1232,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-exit-fullscreen"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Exit fullscreen<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-compress"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Exit fullscreen<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             exit-fullscreen
@@ -1413,10 +1241,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-volume-off"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Muted<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-volume-off"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Muted<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             volume-off
@@ -1424,10 +1250,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-volume-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Low volume<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-volume-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Low volume<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             volume-down
@@ -1435,10 +1259,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-volume-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>High volume<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-volume-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>High volume<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             volume-up
@@ -1451,10 +1273,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-user"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>User account<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-user"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>User account<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             user
@@ -1462,10 +1282,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-calendar"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Calendar<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-calendar"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Calendar<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             calendar
@@ -1478,10 +1296,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-arrow-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Up arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-arrow-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Up arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             arrow-up
@@ -1489,10 +1305,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-arrow-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-arrow-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             arrow-down
@@ -1500,10 +1314,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-arrow-circle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-arrow-circle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             arrow-circle-down
@@ -1511,10 +1323,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-angle-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Left arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-angle-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Left arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             angle-left
@@ -1522,10 +1332,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-angle-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Right arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-angle-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Right arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             angle-right
@@ -1533,10 +1341,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-angle-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Up arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-angle-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Up arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             angle-up
@@ -1544,10 +1350,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-angle-down"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Down arrow<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             angle-down
@@ -1555,10 +1359,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-refresh"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Refresh<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-refresh"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Refresh<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             refresh
@@ -1566,10 +1368,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-menu"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-navicon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             menu, reorder, bars
@@ -1577,10 +1377,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-ellipsis"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Ellipsis<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-ellipsis-h"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Ellipsis<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             ellipsis
@@ -1593,10 +1391,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-trash"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-trash-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             trash, delete
@@ -1604,10 +1400,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-help"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-question-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             help
@@ -1615,10 +1409,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Check Mark<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Check Mark<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             check
@@ -1626,10 +1418,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-close"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-close"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             close, remove
@@ -1637,10 +1427,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-close-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-times-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             close-circle
@@ -1648,10 +1436,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-close-circle-light"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-times-circle-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             close-circle-light
@@ -1659,10 +1445,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-error"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-exclamation-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             error
@@ -1670,10 +1454,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-warning"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-exclamation-triangle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             warning
@@ -1681,10 +1463,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-information"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-info-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             information
@@ -1697,10 +1477,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-checkbox-checked"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Checked checkbox<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-check-square-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Checked checkbox<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             checkbox-checked
@@ -1708,10 +1486,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-checkbox-unchecked"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Unchecked checkbox<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-square-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Unchecked checkbox<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             checkbox-unchecked
@@ -1719,10 +1495,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-checkbox-checked-dark"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Checked checkbox<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-check-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Checked checkbox<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             checkbox-checked-dark
@@ -1730,10 +1504,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-radio-unchecked"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Unchecked radio<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-circle-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Unchecked radio<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             radio-unchecked
@@ -1741,10 +1513,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-radio-checked"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Checked radio<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-dot-circle-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Checked radio<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             radio-checked
@@ -1757,10 +1527,8 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example-set"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-list"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Unordered list<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-list"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Unordered list<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             list
@@ -1768,10 +1536,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-list-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>List<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-list-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>List<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             list-alt
@@ -1779,10 +1545,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-clock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Clock<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-clock-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Clock<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             clock
@@ -1790,10 +1554,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-filter"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Filter<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-filter"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Filter<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             filter
@@ -1801,10 +1563,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-sort"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Sort<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-sort"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Sort<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             sort, unsorted
@@ -1812,10 +1572,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-undo"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-undo"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             undo, rotate-left
@@ -1823,10 +1581,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-table"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Table<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-table"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Table<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             table
@@ -1834,10 +1590,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-book"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Bookmark<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-book"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Bookmark<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             book
@@ -1845,10 +1599,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-money"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Dollar bill<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-money"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Dollar bill<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             money
@@ -1856,10 +1608,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-file"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>File<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-file"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>File<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             file
@@ -1867,10 +1617,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-file-light"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>File<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-file-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>File<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             file-light
@@ -1878,10 +1626,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-home"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-home"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             home
@@ -1889,10 +1635,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-external-link"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>External link<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-external-link"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>External link<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             external-link
@@ -1900,10 +1644,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-sitemap"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Sitemap<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-sitemap"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Sitemap<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
            sitemap
@@ -1911,10 +1653,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-lock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Locked<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-lock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Locked<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             lock
@@ -1922,10 +1662,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-unlock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Unlocked<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-unlock"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Unlocked<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             unlock
@@ -1933,10 +1671,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             search
@@ -1944,10 +1680,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-search-plus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Zoom in<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-search-plus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Zoom in<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             search-plus
@@ -1955,10 +1689,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-search-minus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Zoom out<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-search-minus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Zoom out<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             search-minus
@@ -1966,10 +1698,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-settings"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-cog"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             settings, cog, gear
@@ -1977,10 +1707,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-shopping-cart"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Checkout<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-shopping-cart"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Checkout<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             shopping-cart
@@ -1988,10 +1716,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Comments<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-comments"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Comments<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             comments
@@ -1999,10 +1725,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-comment"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Comment<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-comment"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Comment<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             comment
@@ -2010,10 +1734,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-reply"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-reply"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Reply<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             reply
@@ -2021,10 +1743,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-plus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-plus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             plus
@@ -2032,10 +1752,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-minus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-minus"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Remove<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             minus
@@ -2043,10 +1761,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-print"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Print<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-print"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Print<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             print
@@ -2054,10 +1770,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-pencil"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Pencil<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-pencil"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pencil<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             pencil
@@ -2065,10 +1779,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-edit"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-edit"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             edit
@@ -2076,10 +1788,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-copy"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-copy"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             copy
@@ -2087,10 +1797,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-email"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-envelope"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             email
@@ -2098,10 +1806,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-flag"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Flag<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-flag"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Flag<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             flag
@@ -2109,10 +1815,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-thumb-tack"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Pin<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-thumb-tack"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pin<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             thumb-tack
@@ -2120,10 +1824,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-link"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-link"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             link
@@ -2131,10 +1833,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-unlink"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Unlink<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-unlink"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Unlink<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             unlink
@@ -2142,10 +1842,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-quote-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Quote<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-quote-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Quote<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             quote-left
@@ -2153,10 +1851,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-upload"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Upload<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-upload"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Upload<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             upload
@@ -2164,10 +1860,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-show"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Show<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-eye"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Show<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             show, visible
@@ -2175,10 +1869,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-hide"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Hide<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-eye-slash"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Hide<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             hide, hidden
@@ -2186,10 +1878,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-share"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Share<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-share-square-o"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Share<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             share
@@ -2197,10 +1887,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-star"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Favorite<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-star"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Favorite<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             star
@@ -2208,10 +1896,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-bullhorn"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Notifications<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-bullhorn"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Notifications<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             bullhorn
@@ -2219,10 +1905,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-spinner"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Loading, please wait...<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-spinner"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading, please wait...<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             spinner
@@ -2230,10 +1914,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-twitter-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Twitter<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-twitter-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Twitter<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             twitter-square
@@ -2241,10 +1923,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-facebook-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Facebook<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-facebook-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Facebook<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             facebook-square
@@ -2252,10 +1932,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example example-icon"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-display"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-fallback icon-fallback-text"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon icon-linkedin-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>LinkedIn<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon fa fa-linkedin-square"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>LinkedIn<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-classname"</span><span class="nt">&gt;</span>
             linkedin-square
@@ -2291,7 +1969,7 @@
     <footer class="pldoc-footer-site">
         <div class="pldoc-footer-site-copyright">
             <p class="pldoc-copy copy-micro">
-                Copyright &copy; <time datetime="2016-05-05T10:29:16-04:00">2016</time> edX.
+                Copyright &copy; <time datetime="2016-06-24T14:18:44-04:00">2016</time> edX.
             </p>
             <p class="pldoc-copy copy-micro">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
@@ -2306,7 +1984,7 @@
 
     </div>
 
-    <script src="/public/pattern-library.js"></script>
+    <script src="/public/pattern-library-doc.js"></script>
 
 </body>
 </html>
